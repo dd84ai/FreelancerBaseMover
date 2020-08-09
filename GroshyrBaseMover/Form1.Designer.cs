@@ -1,4 +1,4 @@
-﻿namespace GroshyrBaseMover
+﻿namespace FreelancerBaseMover
 {
     partial class Form1
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1_fileaddress = new System.Windows.Forms.TextBox();
             this.label1_fileaddress = new System.Windows.Forms.Label();
             this.button1_process = new System.Windows.Forms.Button();
@@ -54,6 +55,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox1_xmot = new System.Windows.Forms.TextBox();
             this.checkBox1_mot = new System.Windows.Forms.CheckBox();
+            this.checkBox1_position = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox1_fileaddress
@@ -303,11 +305,26 @@
             this.checkBox1_mot.UseVisualStyleBackColor = true;
             this.checkBox1_mot.CheckedChanged += new System.EventHandler(this.checkBox1_mot_CheckedChanged);
             // 
+            // checkBox1_position
+            // 
+            this.checkBox1_position.AutoSize = true;
+            this.checkBox1_position.Checked = true;
+            this.checkBox1_position.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1_position.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1_position.Location = new System.Drawing.Point(117, 71);
+            this.checkBox1_position.Name = "checkBox1_position";
+            this.checkBox1_position.Size = new System.Drawing.Size(96, 24);
+            this.checkBox1_position.TabIndex = 27;
+            this.checkBox1_position.Text = "Changing";
+            this.checkBox1_position.UseVisualStyleBackColor = true;
+            this.checkBox1_position.CheckedChanged += new System.EventHandler(this.checkBox1_position_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 345);
+            this.Controls.Add(this.checkBox1_position);
             this.Controls.Add(this.checkBox1_mot);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1_zmot);
@@ -334,6 +351,7 @@
             this.Controls.Add(this.button1_process);
             this.Controls.Add(this.label1_fileaddress);
             this.Controls.Add(this.textBox1_fileaddress);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Freelancer base mover";
             this.ResumeLayout(false);
@@ -369,6 +387,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1_xmot;
         private System.Windows.Forms.CheckBox checkBox1_mot;
+        private System.Windows.Forms.CheckBox checkBox1_position;
     }
 }
 
